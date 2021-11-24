@@ -1,0 +1,366 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: none;
+    box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+}
+html, body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    background-color: var(--white);
+    background-image: url('../image/999.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+body::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--black);
+    opacity: .5;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+:root {
+    --white: #ffffff;
+    --black: #333333;
+    --orange: #ff6347;
+}
+button, a, input[type="submit"] {
+    cursor: pointer;
+}
+*::selection {
+    background-color: var(--black);
+    color: var(--white);
+}
+img {
+    user-select: none;
+}
+
+/* intro sec style */
+.intro-sec {
+    width: 100%;
+    height: 100vh;
+    padding-top: 25vh;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.play-title {
+    font-size: 5rem;
+    display: block;
+    margin-bottom: 50px;
+    color: var(--orange);
+}
+.play-start {
+    padding: 15px 50px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+
+    box-shadow: 5px 5px 0px var(--orange);
+}
+.play-start:active {
+    top: 5px;
+    left: 5px;
+    box-shadow: none;
+}
+
+/* play section style */
+.play-sec {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.play-counter {
+    width: 100%;
+    height: 20vh;
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.follow-my {
+    width: 100px;
+    height: 100px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.follow-my a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+}
+.counter {
+    width: 200px;
+    height: 50px;
+    
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.you {
+    width: 100px;
+    font-size: 2rem;
+
+    border-right: 1px solid var(--black);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lap {
+    width: 100px;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-body {
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-hand {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.you-hand {
+    width: max-content;
+    height: max-content;
+}
+.you-hand-img {
+    transform: rotate(90deg);
+}
+.lap-hand {
+    width: max-content;
+    height: max-content;
+}
+.lap-hand-img {
+    transform: rotate(-90deg);
+}
+.play-control {
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control {
+    width: 250px;
+    height: 50px;
+    font-size: 1.25rem;
+
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.select-section {
+    width: 100px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select-btn {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    background-color: #0f0fc0;
+    color: var(--white);
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-section {
+    width: 100px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-btn {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    background-color: #2cc00f;
+    color: var(--white);
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select-modul {
+    width: 100%;
+    height: 100vh;
+
+    background-color: #333333b2;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select-modul-card {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+
+    background-color: var(--white);
+    border-radius: 15px;
+}
+.select-modul-imgs {
+    width: 100%;
+    height: max-content;
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.select-modul-items {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+/* class tools */
+.d-none {
+    display: none;
+}
+.run-anim-you {
+    animation: rugg1 2s linear;
+}
+.run-anim-lap {
+    animation: rugg2 2s linear;
+}
+
+
+/* animations */
+@keyframes rugg1 {
+    0%{
+        transform: rotate(55deg);
+    }
+    15%{
+        transform: rotate(125deg);
+    }
+    30%{
+        transform: rotate(55deg);
+    }
+    45%{
+        transform: rotate(125deg);
+    }
+    60%{
+        transform: rotate(55deg);
+    }
+    75%{
+        transform: rotate(125deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rugg2 {
+    0%{
+        transform: rotate(-55deg);
+    }
+    15%{
+        transform: rotate(-125deg);
+    }
+    30%{
+        transform: rotate(-55deg);
+    }
+    45%{
+        transform: rotate(-125deg);
+    }
+    60%{
+        transform: rotate(-55deg);
+    }
+    75%{
+        transform: rotate(-125deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+
+
+/* responsive */
+@media screen and (max-width:1000px) {
+    .play-hand {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .you-hand-img ,.lap-hand-img {
+        width: 200px;
+        height: 200px;
+    }
+    .play-hand {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .you-hand-img ,.lap-hand-img {
+        width: 150px;
+        height: 150px;
+    }
+}

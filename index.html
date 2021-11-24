@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css fils -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+
+    <!-- follow my / instagram -->
+    <div class="follow-my">
+        <a href="https://www.instagram.com/kl_h5/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <!-- intro START -->
+    <section class="intro-sec">
+        <h1 class="play-title">Rock Paper Scissors</h1>
+        <button class="play-start">Start</button>
+    </section>
+    <!-- intro END -->
+
+    <!-- play START -->
+    <section class="play-sec d-none">
+        <!-- play counter START -->
+        <article class="play-counter">
+            <div class="counter">
+                <div class="you">
+                    <span class="counter-you-num">
+                        0
+                    </span>
+                </div>
+                <div class="lap">
+                    <span class="counter-lap-num">
+                        0
+                    </span>
+                </div>
+            </div>
+        </article>
+        <!-- play counter END -->
+
+        <!-- play body START -->
+        <article class="play-body">
+            <div class="play-hand">
+                <div class="you-hand">
+                    <img src="image/rock.png" class="you-hand-img" id="you-hand-img" alt="rock">
+                </div>
+                <div class="lap-hand">
+                    <img src="image/rock.png" class="lap-hand-img" id="lap-hand-img" alt="rock">
+                </div>
+            </div>
+        </article>
+        <!-- play body END -->
+
+        <!-- play control START -->
+        <article class="play-control">
+            <div class="control">
+                <div class="select-section">
+                    <div class="select-btn">
+                        Select
+                    </div>
+                </div>
+                <div class="play-section">
+                    <div class="play-btn">
+                        Play
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- play control START -->
+    </section>
+    <!-- play END -->
+
+    <!-- select modul START -->
+    <div class="select-modul d-none">
+        <div class="select-modul-card">
+            <h3 class="select-modul-title">choose your card</h3>
+            <hr>
+            <div class="select-modul-imgs">
+                <img src="image/cuter.png" class="select-modul-items" select-items="cuter">
+                <img src="image/paper.png" class="select-modul-items" select-items="paper">
+                <img src="image/rock.png" class="select-modul-items" select-items="rock">
+            </div>
+        </div>
+    </div>
+    <!-- select modul END -->
+
+
+    <!-- javascript files -->
+    <script src="main.js"></script>
+</body>
+
+</html>
